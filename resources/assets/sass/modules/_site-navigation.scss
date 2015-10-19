@@ -1,0 +1,43 @@
+.site-navigation {
+	@include clearfix;
+	border-top:1px solid $border-color;
+	border-bottom:1px solid $border-color;
+	margin-bottom:3em;
+	
+	.main-menu {
+		@include clearfix;
+
+		a {
+			color:$text-color;
+		}	
+	}
+
+	.tag-list {
+		@include clearfix();
+		text-align: center;
+		text-transform: uppercase;
+		@include media($mobile) {
+			text-align: left;
+		}
+		li {
+			display: inline-block;
+			margin:0 0.5em;
+
+			&.more {
+				display: none;
+				@include media($mobile) {
+					display: inline-block;
+				}
+			}
+
+			@include media($mobile) {
+				display: none;
+
+				&:nth-of-type(1),
+				&:nth-of-type(2) {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

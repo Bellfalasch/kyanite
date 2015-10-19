@@ -1,0 +1,27 @@
+.masthead {
+	position:relative;
+	height:350px;
+	@include linear-gradient(90deg, darken($background-light,5), darken($background-light,15));
+
+	.slide {
+		height: 100%;
+		position:relative;
+
+		.slide-text {
+			position: absolute;
+			top:50%;
+			right: 0;
+			max-width: 448px;
+			
+			@include transform(translate(0, -50%));
+			.slide-heading {
+				font-style: italic;
+				font-weight: 300;
+
+			}
+			.slide-ingress {
+				font-weight: 300;
+			}	
+		}
+	}
+}

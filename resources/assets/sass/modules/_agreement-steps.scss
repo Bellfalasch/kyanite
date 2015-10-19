@@ -1,0 +1,68 @@
+.agreement-steps {
+	
+	.organization-list {
+		@extend .grid-two;
+		@include clearfix;
+		
+		a {
+			display: block;
+			&:hover {
+				background:$background-darker-light;
+			}
+		}
+
+		.figure {
+			height: 100px;
+			line-height: 100px;
+			width: 100px;
+			background:$background-light;
+			text-align: center;
+			float:left;
+			border-radius:5px;
+			border:1px solid $border-color;
+		}
+
+		.text {
+			float:left;
+			width: calc(100% - 100px);
+			padding-left:1em;
+			line-height: 100px;
+		}
+	}
+
+	.copy-volume {		
+		@include clearfix;	
+		display: flex;
+  		flex-wrap: wrap;
+  		width: 100%;
+  		
+  		@extend .grid-three;
+
+  		.grid-item {
+			display: flex; 
+			padding: 0.5em;
+  		}
+
+		a {
+			background-color:$background-light;
+			border-radius:5px;
+			border:1px solid $border-color;
+			padding:0.8em;
+			color:$text-color;
+			display: flex;
+			flex-direction: column;
+			padding: 1em;
+			width: 100%;
+		}	
+
+		.figure {
+			height: 150px;
+			background-color:$background-darker-light;
+			margin-bottom:1em;
+		}
+
+		.text {
+			
+		}
+	}
+}

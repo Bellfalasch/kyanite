@@ -1,0 +1,47 @@
+
+/* base/config.scss
+   ================================================ */
+
+/* Breakpoints for responsive design */
+
+$tablet-portrait: new-breakpoint(max-width 979px);
+$mobile: new-breakpoint(max-width 767px);
+
+/* Projectcolors */
+
+$white:			#fff;
+$dark: 			#4a4a4a;
+$red:  			#b20031;
+$blue:			#778393;
+$flatgreen: 	#7dc7a7;
+$flatblue: 		#45b4d3;
+$flatbrown:		#dcbd95; 	
+$black: 		#000000;
+
+
+$graySwatchOne: 	#f7f7f7;
+$graySwatchTwo: 	#eaeaea;
+$graySwatchThree: 	#ccc;
+
+/* Functional colors */
+
+$primary:					$red;
+$secondary:					$blue;
+$text-color:				$dark;
+$link-color:				$primary;
+$footer-background: 		$dark;
+$footer-color:				$white;
+$background-light:  		$graySwatchOne;
+$background-darker-light: 	$graySwatchTwo;
+$background-dark:  			$dark;
+$border-color:				$graySwatchThree;
+
+$tertiary-one:				$flatblue;
+$tertiary-two:				$flatgreen;
+$tertiary-three:			$flatbrown;
+
+
+$facebook: #3b5998;
+$twitter: #558cee;
+$print: #219e8f;
+$mail: $primary;

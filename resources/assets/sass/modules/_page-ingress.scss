@@ -1,0 +1,6 @@
+.page-ingress {
+	@include span-columns(8);
+	@include media($tablet-portrait) {
+		@include span-columns(12);
+	}
+}

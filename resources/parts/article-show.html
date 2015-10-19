@@ -1,0 +1,92 @@
+<div class="inner-container">
+    <article class="article">
+        <div class="preface">
+            <h1 class="heading super-title" data-th-text="${content.data.title}">Heading 1 (24)</h1>    
+            <p data-th-text="${content.data.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    	
+    	<div class="article-container" data-th-utext="${portal.processHtml({ '_value=' + content.data.html })}">
+            <figure data-test="${article.images}">
+                <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
+                <figcaption>Labore et dolore magna aliqua.</figcaption>
+            </figure>  
+            <div class="article-meta-data">
+                <div class="author">
+                    <img src="">
+                    <span>Name</span>
+                    <span>Date</span>
+                </div>
+                <ul class="meta-tags">
+                    <li>labore</li>
+                    <li>fugiat</li>
+                </ul>    
+            </div>
+            <div class="article-text">
+                <h2>Heading 2 (18)</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h2>Heading 2 (18)</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a href="">Link text (16) fugiat nulla pariatur</a></p>
+                
+                <h3>Heading 3 (15)</h3>
+                <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla.</p>
+                <ul>
+                    <li>Ullamco laboris nisi ut aliquip ex ea commodo</li>
+                    <li>Dolore eu fugiat</li>
+                    <li>Unt in culpa qui officia</li>
+                </ul>                
+                <div class="wrapper">
+	<ul class="social-sharing">
+		<li><a class="facebook" href="" class="icon-size"><i class="icon-social_facebook"></i> <span class="visuallyhidden">Facebook</span></a></li>
+		<li><a class="twitter" href="" class="icon-size"><i class="icon-social_twitter"></i><span class="visuallyhidden">Twitter</span></a></li>
+		<li><a class="mail" href="" class="icon-size"><i class="icon-sendemail"></i><span class="visuallyhidden">E-post</span></a></li>
+	</ul>
+</div>
+            </div>
+    	</div>
+    </article>
+    
+    <aside class="related-articles">
+	<h2 class="heading">Relaterte artikler</h2>
+	<div class="wrapper">
+		<div class="grid-item">
+			<article class="article-teaser" data-th-each="article : ${articles}">
+    <figure data-test="${article.images}">
+        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
+    </figure> 
+    <div class="text-container">
+        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
+        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <ul class="meta-tags">
+            <li>incididunt</li>
+            <li>dolore</li>
+        </ul>
+    </div>
+</article>      
+
+		</div>
+		<div class="grid-item">
+			<article class="article-teaser" data-th-each="article : ${articles}">
+    <figure data-test="${article.images}">
+        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
+    </figure> 
+    <div class="text-container">
+        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
+        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <ul class="meta-tags">
+            <li>incididunt</li>
+            <li>dolore</li>
+        </ul>
+    </div>
+</article>      
+
+		</div>
+	</div>
+</aside>
+    
+</div>

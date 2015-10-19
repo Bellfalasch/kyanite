@@ -1,0 +1,45 @@
+.agreements {
+	background-color:$background-light;
+	@extend .outer-container;
+	
+	li {
+		@include span-columns(4);
+		background:#fff;
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+	}
+
+	.agreement-entry {	
+		display: block;
+	}
+	.agreement-entry-text {
+		height: em(60);
+		line-height: em(60);
+		padding:0 1em;
+		span {
+			font-size: em(24);
+			&:after {
+				font-family: 'icomoon';
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				/* Better Font Rendering =========== */
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+	}
+	.agreement-entry-img {
+		max-height: 204px;
+		overflow: hidden;
+		img {
+			max-width:100%;
+			width: 100%;
+			height: auto;
+		}	
+	}
+}

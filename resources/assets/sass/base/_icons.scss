@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?-4lfxhm');
+  src:url('../fonts/icomoon.eot?#iefix-4lfxhm') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?-4lfxhm') format('truetype'),
+    url('../fonts/icomoon.woff?-4lfxhm') format('woff'),
+    url('../fonts/icomoon.svg?-4lfxhm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-size {
+  font-size:2.5em;
+}
+
+.icon-size-small {
+  // font-size:1.5em;
+}
+
+.icon-arrow:before {
+  content: "\e60a";
+}
+.icon-close:before {
+  content: "\e60f";
+}
+.icon-file_pdf:before {
+  content: "\e610";
+}
+.icon-sendemail2:before {
+  content: "\e611";
+}
+.icon-avtale:before {
+  content: "\e601";
+}
+.icon-file_doc:before {
+  content: "\e602";
+}
+.icon-hamburger:before {
+  content: "\e603";
+}
+.icon-language_EN:before {
+  content: "\e604";
+}
+.icon-language_NO:before {
+  content: "\e605";
+}
+.icon-logo_k:before {
+  content: "\e606";
+}
+.icon-logo_kopinor:before {
+  content: "\e607";
+}
+.icon-newsletter:before {
+  content: "\e608";
+}
+.icon-print:before {
+  content: "\e609";
+}
+.icon-sendemail:before {
+  content: "\e60b";
+}
+.icon-social_facebook:before {
+  content: "\e60c";
+}
+.icon-social_twitter:before {
+  content: "\e60d";
+}
+.icon-telephone:before {
+  content: "\e60e";
+}
+.icon-search:before {
+  content: "\e600";
+}

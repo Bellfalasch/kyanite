@@ -1,0 +1,48 @@
+p {
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 0.5em 0;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+	margin-top: 0;
+	font-size: em(24);
+}
+
+h2, .h2 {
+	font-size:em(18);
+	font-weight:bold;
+}
+
+h3, .h3 {
+	font-size:em(16);
+	font-weight:bold;
+}
+
+h4, .h4 {
+	font-size:em(14);
+	font-weight:bold;
+}
+
+small, .font_small {
+	font-size: 0.8em;
+}
+
+// general headings
+.heading {
+
+	article & {
+		font-family: 'Cardo', serif;
+		font-weight: bold;
+		font-size: em(28);
+	}
+	
+	&.super-title {
+		font-size: em(36);
+	}
+}

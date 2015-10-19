@@ -1,0 +1,58 @@
+.employeelist {
+	padding:2em 0 !important;
+	margin:0 !important;
+	@include clearfix;
+
+	.employee {
+		list-style:none;
+		background-color:$background-light;
+		padding:1em;
+		@include clearfix;
+		margin-bottom: 4px;
+		position:relative;
+		min-height: 107px;
+		line-height: 75px;
+
+		.aligner {
+			padding-left:em(107);
+			width: 100%;
+		}
+
+
+		.employee-left {
+			display: inline;
+			width: 60%;
+			float:left;
+			padding-right:1em;
+			@include media($mobile) {
+				 width: 100%;
+			}
+		}
+		.employee-right {
+			display: inline;
+			width: 40%;
+			float:left;	
+			@include media($mobile) {
+				width: 100%;	
+			}
+		}
+
+
+		span {
+			display: block;
+			line-height: 1.6;
+			@include media($mobile) {
+				display: inline-block;
+			}
+		}
+
+		img {
+			position:absolute;
+			top:1em;
+			left:1em;
+			max-width: 75px;
+			height: auto;
+			border-radius: 100%;
+		}
+	}
+}

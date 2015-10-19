@@ -1,0 +1,63 @@
+.article {
+	@include clearfix();
+	margin-bottom:6em;
+	
+	.preface {
+		text-align: center;
+		width: 80%;
+		margin:0 auto;
+		margin-bottom:3em;
+		p {
+			font-size:em(18);
+			font-weight: 300;
+		}
+	}
+
+	.article-container {
+		figure {
+			margin:0 0 2em 0;
+			display: block;
+			position:relative;
+		
+			img {
+				max-width: 100%;
+				width: 100%;
+				height: auto;
+				max-height: 420px;
+				overflow: hidden;
+			}
+
+			figcaption {
+				font-size:em(13);
+				font-weight: bold;
+			}
+		}
+
+		.article-meta-data {
+			@include span-columns(3);
+			padding-right:3em;
+
+			.author {
+				border-right:1px solid $border-color;
+				span {
+					display: block;
+				}
+			}
+
+			@include media($tablet-portrait) {
+				@include span-columns(12);
+				.author {
+					border-right:none;
+				}
+			}
+		}
+
+		.article-text {
+			@include span-columns(9);
+
+			@include media($tablet-portrait) {
+				@include span-columns(12);
+			}
+		}
+	}
+}

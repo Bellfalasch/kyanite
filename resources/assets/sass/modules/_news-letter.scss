@@ -1,0 +1,40 @@
+.news-letter {
+	text-align:center;
+
+	.wrapper {
+		display: inline-block;
+		margin:0 auto;
+	}
+
+	.label-container,
+	.input-container,
+	.button-container {
+		float:left;
+		padding-right: 1em;
+	}
+
+	.input-container {
+		input {
+			margin:0;
+			padding:0 1em;
+			line-height: 43px;
+			width: 250px;
+		}
+	}
+
+	.button-container {
+		button {
+			width: 60px;
+			line-height: 45px;
+			padding:0;
+		}
+	}
+
+	.label-container {
+		padding-right:1.5em;
+		label {
+			line-height: 45px;
+		}
+	}
+
+}

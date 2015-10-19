@@ -1,0 +1,14 @@
+.site-search {
+
+	.search-trigger {
+		position: absolute;
+		right: 1em;
+		bottom:em(-48);
+		width: em(48);
+		height: em(48);
+		line-height: em(48);
+		background:$text-color;
+		color:$white;
+	}
+
+}

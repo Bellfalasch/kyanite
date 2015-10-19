@@ -1,0 +1,42 @@
+.grid-four {
+
+	.grid-item {
+		@include span-columns(3);
+		@include omega(4n);
+		margin-bottom:1em;
+		position:relative;
+
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+	}
+}
+
+
+.grid-three {
+
+	.grid-item {
+		@include span-columns(4);
+		@include omega(3n);
+		margin-bottom:1em;
+		position:relative;
+
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+	}
+}
+
+.grid-two {
+
+	.grid-item {
+		@include span-columns(6);
+		@include omega(2n);
+		margin-bottom:1em;
+		position:relative;
+
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+	}
+}

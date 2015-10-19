@@ -1,0 +1,88 @@
+
+/* base/basic.scss
+   ================================================ */
+
+html {
+	font-size:16px;
+}
+
+body {
+	line-height:1.5;
+	font-family: 'Open Sans', sans-serif;
+	background-color:#fff;
+}
+
+a {
+	text-decoration:none;
+	color:$link-color;
+	&.bold {
+		font-weight: 600;
+	}
+}
+
+ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+article {
+	p {
+		font-size: em(15);
+	}
+}
+
+.outer-container {
+	padding:3em 0;
+}
+
+.inner-container {
+	@include clearfix;
+	max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    padding:0 1em;
+
+    &.leader {
+    	padding-top:3em;
+    }
+
+    &.trailer {
+    	padding-bottom:3em;
+    }
+
+   	&.no-leader {
+		padding-top:0;
+	}
+	
+	&.no-trailer {
+		padding-bottom:0;
+	}
+
+}
+
+.wrapper {
+	@include clearfix;
+}
+
+.wrapper-trailer {
+	@include clearfix;
+	margin-bottom:1.5em;
+	&:last-of-type {
+		margin-bottom:0;
+	}
+}
+
+.content {
+	
+}
+
+figure {
+	margin:0;
+	img {
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+	}
+}

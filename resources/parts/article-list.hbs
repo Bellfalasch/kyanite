@@ -1,0 +1,34 @@
+<section class="outer-container article-list">
+	<div class="inner-container">
+		<h1 class="visuallyhidden">Nyheter</h1>
+		
+		<div class="wrapper">
+			<article class="article-teaser" data-th-each="article : ${articles}">
+				<figure data-test="${article.images}">
+					<img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
+				</figure> 
+				<div class="text-container">
+					<h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
+					<p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</article>			
+
+			<article class="article-teaser" data-th-remove="all">
+				<figure>
+					<img data-th-src="${portal.assetUrl({'_path=img/news.jpg'})}" src="resources/assets/img/news.jpg" />
+				</figure>
+				<div class="text-container">
+					<h2 class="heading">Nyheter overskrift</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					<ul class="meta-tags">
+						<li>incididunt</li>
+						<li>dolore</li>
+					</ul>
+				</div>
+			</article>
+		</div>		
+
+	</div>
+</section>

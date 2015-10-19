@@ -1,0 +1,38 @@
+.site-footer {
+	@extend .outer-container;
+	background-color:$footer-background;
+	margin-top:em(120);
+	color:$white;
+
+	@extend .grid-four;
+
+	.grid-item {
+		a,
+		span {
+			display: block;
+		}
+
+	}
+
+	p {
+		margin:0;
+		color:$footer-color;
+		font-weight: 300;
+	}
+	a {
+		color:$white;
+		text-decoration: underline;
+	}
+
+	.heading {
+		font-weight:300;
+		margin-bottom: 2em;
+	}
+
+	.editors {
+		margin-top:em(60);
+		span {
+			margin-right:3em;
+		}
+	}
+}

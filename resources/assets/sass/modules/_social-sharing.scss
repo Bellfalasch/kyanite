@@ -1,0 +1,47 @@
+.social-sharing {
+	@include clearfix();
+	margin-top:3em;
+	li {
+		display:inline-block;	
+		float:left;
+		margin-right: 0.5em;
+
+		a {
+			width: em(60);
+			height: em(60);
+			line-height: em(60);
+			display: inline-block;
+			border-radius:50%;
+			background-color:$secondary;
+			text-align:center;
+
+			&.facebook {
+				&:hover {
+					background-color:$facebook;
+				}
+			}
+			&.twitter {
+				&:hover {
+					background-color:$twitter;
+				}
+			}
+			&.print {
+				&:hover {
+					background-color:$print;
+				}
+			}
+			&.mail {
+				&:hover {
+					background-color:$mail;
+				}
+			}
+		}
+
+		i {
+			display: inline-block;
+			vertical-align: middle;
+			font-size:40px;
+			color:$white;
+		}
+	}
+}

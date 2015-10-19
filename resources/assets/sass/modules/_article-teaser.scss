@@ -1,0 +1,25 @@
+.article-teaser {
+	@include clearfix;
+	@include span-columns(12);
+	margin-bottom:3em;
+
+	figure {
+		margin:0 0 2em 0;
+		display: block;
+		max-height: 420px;
+		overflow: hidden;
+	
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.text-container {
+		width: 70%;
+		@include media($mobile) {
+			width: 100%;
+		}
+	}
+}

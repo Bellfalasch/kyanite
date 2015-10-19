@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="no-js" lang="NO">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Fabelaktig Formidling</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/resources/assets/css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="resources/assets/js/fallback-jquery/fallback-jquery.min.js">\x3C/script>')</script>
+        <script src="/resources/assets/js/vendor.min.js"></script>
+        <script src="/resources/assets/js/main.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body data-th-attr="class=${config.theme}">
+        
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="site-header" data-th-text="${header.text}">
+    
+    <div class="inner-container no-leader no-trailer">
+        <div class="logo-container">
+            <a href="#" class="logo">Fabelaktig formidling</a>    
+        </div>
+        
+        <nav class="site-navigation" aria-label="hovednavigasjon">    
+            <div id="main-menu" class="main-menu">
+
+            </div>    
+
+            <ul class="tag-list">
+                <li><a href="">ipsum</a></li>
+                <li><a href="">amet</a></li>
+                <li><a href="">consectetur</a></li>
+                <li><a href="">aliqua</a></li>
+                <li><a href="">ullamco</a></li>
+                <li><a href="">dolor</a></li>
+                <li><a href="">irure</a></li>
+                <li><a href="">occaecat</a></li>
+                <li class="more"><a href="">Mer</a></li>
+            </ul>
+
+        </nav>
+
+
+        <nav class="breadcrumb" aria-label="brødsmulesti">
+            <span>Dine valg:</span>
+            <ul>
+                <li>foo</li>
+                <li>foo second</li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        <main role="main" class="content">
+            <div class="inner-container">
+	<article class="article-teaser" data-th-each="article : ${articles}">
+    <figure data-test="${article.images}">
+        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
+    </figure> 
+    <div class="text-container">
+        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
+        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <ul class="meta-tags">
+            <li>incididunt</li>
+            <li>dolore</li>
+        </ul>
+    </div>
+</article>      
+	
+</div>
+
+<div class="outer-container resources">
+	<div class="inner-container">
+		<div class="grid-item">
+			<h2>Relevant ressurs</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+			<ul class="meta-tags">
+				<li>magna</li>
+				<li>enim</li>
+				<li>incididunt</li>
+			</ul>
+		</div>
+		<div class="grid-item">
+			<h2>Relevant ressurs</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+			<ul class="meta-tags">
+				<li>magna</li>
+				<li>enim</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="inner-container">
+	<article class="article-teaser" data-th-each="article : ${articles}">
+    <figure data-test="${article.images}">
+        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
+    </figure> 
+    <div class="text-container">
+        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
+        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <ul class="meta-tags">
+            <li>incididunt</li>
+            <li>dolore</li>
+        </ul>
+    </div>
+</article>      
+	
+</div>
+
+<div class="inner-container">
+	<article class="article-teaser" data-th-each="article : ${articles}">
+    <figure data-test="${article.images}">
+        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
+    </figure> 
+    <div class="text-container">
+        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
+        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <ul class="meta-tags">
+            <li>incididunt</li>
+            <li>dolore</li>
+        </ul>
+    </div>
+</article>      
+	
+</div>
+
+<section class="outer-container news-letter">
+	<div class="inner-container">
+		<div class="wrapper">
+			<form>
+				<div class="label-container">
+					<label>Abonner på nyhetsbrevet vårt</label>	
+				</div>
+				<div class="input-container">
+					<input type="text" placeholder="Din e-post">	
+				</div>
+				<div class="button-container">
+					<button class="btn submit" type="submit">GO</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+    
+        </main>
+
+        <footer class="site-footer" data-th-each="content : ${footer.contents}" role="contentinfo">
+    <div class="inner-container">
+    	<div class="wrapper">
+    		<h1 class="heading">Fabelaktig Formidling <span class="visuallyhidden">kontaktinformasjon</span></h1>
+    	</div>
+    	<div class="wrapper">
+    		<div class="grid-item">
+	        	<div class="wrapper">
+	        		<h2 class="h3">Kontakt oss</h2>
+	        		<span>23 10 74 00</span>
+	        		<a href="">kopinor@kopinor.no</a>
+	        		<a href="">Våre ansatte</a>
+	        	</div>
+	        </div>
+	        <div class="grid-item">
+	        	<div class="wrapper">
+	        		<h2 class="h3">Besøksadresse</h2>
+	        		<span>Stortingsgata 22</span>
+	        		<span>0120 Oslo</span>
+	        	</div>
+	        </div>	
+	        <div class="grid-item">
+	        	<div class="wrapper">
+	        		<h2 class="h3">Postadresse</h2>
+	        		<span>Postboks 1663 Vika</span>
+	        		<span>0120 Oslo</span>
+	        	</div>
+	        </div>	
+	        <div class="grid-item">
+	        	<div class="wrapper">
+	        		<h2 class="h3">For presse</h2>
+	        		<a href="">Presserom</a>
+	        		<a href="">Pressebilder</a>
+	        	</div>
+	        </div>	
+    	</div>
+    </div>
+</footer>
+    </body>
+</html>

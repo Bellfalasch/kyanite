@@ -1,0 +1,37 @@
+.site-header {
+
+	.logo-container {
+		text-align: center;
+		padding-bottom:em(80);
+	}
+
+	.logo {
+	
+		img {
+			max-width: 100%;
+			height: auto;
+			vertical-align: middle;
+		}
+		@include media($mobile) {
+			// float:none;
+			width: 80px;
+		}
+	}
+
+
+	.burger {
+		display: none;
+		position:absolute;
+		left:0;
+		line-height: em(75);
+		a {
+			color:$text-color;
+			vertical-align: middle;
+		}
+
+		@include media($mobile) {
+			display: block;
+		}
+	}
+}
+
