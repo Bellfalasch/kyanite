@@ -40,3 +40,13 @@
 		}
 	}
 }
+
+.grid-one {
+
+	.grid-item {
+		@include span-columns(12);
+		@include omega();
+		margin-bottom:1em;
+		position:relative;
+	}
+}

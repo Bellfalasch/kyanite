@@ -1,28 +1,27 @@
 .news-letter {
-	text-align:center;
 
-	.wrapper {
-		display: inline-block;
-		margin:0 auto;
-	}
-
-	.label-container,
-	.input-container,
-	.button-container {
-		float:left;
-		padding-right: 1em;
+	.form-container {
+		position:relative;
+		margin:0.5em 0;
+		margin-bottom:2em;
 	}
 
 	.input-container {
+		width: 100%;
+		padding-right:76px;
 		input {
+			background-color:$white;
 			margin:0;
 			padding:0 1em;
 			line-height: 43px;
-			width: 250px;
+			width: 100%;
 		}
 	}
 
 	.button-container {
+		position:absolute;
+		top:0;
+		right:0;
 		button {
 			width: 60px;
 			line-height: 45px;
@@ -31,9 +30,8 @@
 	}
 
 	.label-container {
-		padding-right:1.5em;
 		label {
-			line-height: 45px;
+			@extend .h4;
 		}
 	}
 

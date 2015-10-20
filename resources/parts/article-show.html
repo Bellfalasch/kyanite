@@ -12,25 +12,24 @@
             </figure>  
             <div class="article-meta-data">
                 <div class="author">
-                    <img src="">
-                    <span>Name</span>
-                    <span>Date</span>
+                    <span class="author-image"></span>
+                    <span class="author-name">Name</span>
                 </div>
-                <ul class="meta-tags">
+                <ul class="meta-tags tag-on-article">
                     <li>labore</li>
                     <li>fugiat</li>
                 </ul>    
             </div>
             <div class="article-text">
-                <h2>Heading 2 (18)</h2>
+                <h2 class="heading">Heading 2 (18)</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Tempor incididunt ut labore et dolore magna aliqua.</p>
-                <h2>Heading 2 (18)</h2>
+                <h2 class="heading">Heading 2 (18)</h2>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a href="">Link text (16) fugiat nulla pariatur</a></p>
                 
-                <h3>Heading 3 (15)</h3>
+                <h3 class="heading">Heading 3 (15)</h3>
                 <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -56,33 +55,31 @@
 	<div class="wrapper">
 		<div class="grid-item">
 			<article class="article-teaser" data-th-each="article : ${articles}">
-    <figure data-test="${article.images}">
-        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
-    </figure> 
-    <div class="text-container">
-        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
-        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        <ul class="meta-tags">
-            <li>incididunt</li>
-            <li>dolore</li>
-        </ul>
-    </div>
+	<a href="article.html">
+	    <figure data-test="${article.images}">
+	        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
+	        <div class="meta-tags tag-on-image"><a href="">Tag title</a></div>
+	    </figure> 
+	    <div class="text-container">
+	        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
+	        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+	    </div>
+    </a>
 </article>      
 
 		</div>
 		<div class="grid-item">
 			<article class="article-teaser" data-th-each="article : ${articles}">
-    <figure data-test="${article.images}">
-        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
-    </figure> 
-    <div class="text-container">
-        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
-        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        <ul class="meta-tags">
-            <li>incididunt</li>
-            <li>dolore</li>
-        </ul>
-    </div>
+	<a href="article.html">
+	    <figure data-test="${article.images}">
+	        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
+	        <div class="meta-tags tag-on-image"><a href="">Tag title</a></div>
+	    </figure> 
+	    <div class="text-container">
+	        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
+	        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+	    </div>
+    </a>
 </article>      
 
 		</div>

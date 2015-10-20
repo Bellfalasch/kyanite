@@ -2,11 +2,15 @@
 
 	.logo-container {
 		text-align: center;
-		padding-bottom:em(80);
+		height: 170px;
+		width: 170px;
+		background:$text-color;
+		margin:0 auto;
+		margin-bottom:3em;
 	}
 
 	.logo {
-	
+		color:$text-color;
 		img {
 			max-width: 100%;
 			height: auto;

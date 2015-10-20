@@ -8,6 +8,7 @@
 		display: block;
 		max-height: 420px;
 		overflow: hidden;
+		position:relative;
 	
 		img {
 			max-width: 100%;
@@ -16,10 +17,28 @@
 		}
 	}
 
+	.heading {
+		font-size:em(28);
+		margin-bottom: 0;
+	}
+
 	.text-container {
 		width: 70%;
 		@include media($mobile) {
 			width: 100%;
+		}
+	}
+
+	.two-columns & {
+		@include span-columns(6);
+		.text-container {
+			width: 100%;
+		}
+	}
+
+	.archive & {
+		.meta-tags {
+			display: none;
 		}
 	}
 }

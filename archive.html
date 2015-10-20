@@ -47,8 +47,13 @@
 </header>
 
         <main role="main" class="content">
-            <div class="inner-container">
-	<article class="article-teaser" data-th-each="article : ${articles}">
+            <section class="archive">
+	<div class="inner-container">
+		<div class="selected-tag"><span class="first-span">Valgt tag:</span> Ipsum<a href="" class="unselect-tag"><i class="icon-close"></i></a></div>
+	</div>
+
+	<div class="inner-container">
+		<article class="article-teaser" data-th-each="article : ${articles}">
 	<a href="article.html">
 	    <figure data-test="${article.images}">
 	        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
@@ -61,9 +66,9 @@
     </a>
 </article>      
 	
-</div>
+	</div>
 
-<div class="outer-container resources">
+	<div class="outer-container resources">
 	<div class="inner-container">
 		<div class="grid-item">
 			<h2>Relevant ressurs</h2>
@@ -78,37 +83,7 @@
 	</div>
 </div>
 
-<div class="inner-container">
-	<article class="article-teaser" data-th-each="article : ${articles}">
-	<a href="article.html">
-	    <figure data-test="${article.images}">
-	        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
-	        <div class="meta-tags tag-on-image"><a href="">Tag title</a></div>
-	    </figure> 
-	    <div class="text-container">
-	        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
-	        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-	    </div>
-    </a>
-</article>      
-	
-</div>
-
-<div class="inner-container">
-	<div class="two-columns">
-		<article class="article-teaser" data-th-each="article : ${articles}">
-	<a href="article.html">
-	    <figure data-test="${article.images}">
-	        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
-	        <div class="meta-tags tag-on-image"><a href="">Tag title</a></div>
-	    </figure> 
-	    <div class="text-container">
-	        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
-	        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-	    </div>
-    </a>
-</article>      
-	
+	<div class="inner-container">
 		<article class="article-teaser" data-th-each="article : ${articles}">
 	<a href="article.html">
 	    <figure data-test="${article.images}">
@@ -123,7 +98,8 @@
 </article>      
 	
 	</div>
-</div>
+
+</section>
     
         </main>
 

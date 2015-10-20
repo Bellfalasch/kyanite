@@ -14,6 +14,7 @@
 	}
 
 	.article-container {
+		
 		figure {
 			margin:0 0 2em 0;
 			display: block;
@@ -38,9 +39,18 @@
 			padding-right:3em;
 
 			.author {
-				border-right:1px solid $border-color;
-				span {
-					display: block;
+				.author-image {
+					width: 120px;
+					height: 120px;
+					border-radius:50%;
+					display: inline-block;
+					background:$background-light;
+				}
+				.author-name {
+					width: 120px;
+					text-align: center;
+					display: inline-block;
+					font-weight: bold;
 				}
 			}
 
@@ -54,9 +64,19 @@
 
 		.article-text {
 			@include span-columns(9);
-
 			@include media($tablet-portrait) {
 				@include span-columns(12);
+			}
+
+			p {
+				margin:0.8em 0;
+			}
+
+			.heading {
+				margin-top:24px;
+				margin-top:rem(24);
+				margin-bottom:0;
+				font-family: 'Open Sans', sans-serif;
 			}
 		}
 	}

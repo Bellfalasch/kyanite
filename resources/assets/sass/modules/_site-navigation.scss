@@ -1,18 +1,9 @@
 .site-navigation {
 	@include clearfix;
+	padding:2.5em 0;
 	border-top:1px solid $border-color;
-	border-bottom:1px solid $border-color;
-	margin-bottom:3em;
-	
-	.main-menu {
-		@include clearfix;
 
-		a {
-			color:$text-color;
-		}	
-	}
-
-	.tag-list {
+	.tag-menu {
 		@include clearfix();
 		text-align: center;
 		text-transform: uppercase;
@@ -22,6 +13,11 @@
 		li {
 			display: inline-block;
 			margin:0 0.5em;
+
+			a {
+				font-size: em(15);
+				color:$text-color;
+			}
 
 			&.more {
 				display: none;

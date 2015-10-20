@@ -4,4 +4,15 @@
 
 	@extend .grid-two;
 
+	.archive & {
+		@extend .grid-one;
+
+		.grid-item {
+			&:first-of-type {
+				margin-bottom:3em;
+			}
+		}
+
+	}
+
 }

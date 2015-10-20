@@ -25,7 +25,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-	font-size:em(14);
+	font-size:em(15);
 	font-weight:bold;
 }
 
@@ -36,13 +36,10 @@ small, .font_small {
 // general headings
 .heading {
 
-	article & {
-		font-family: 'Cardo', serif;
-		font-weight: bold;
-		font-size: em(28);
-	}
+	font-family: 'Cardo', serif;
 	
 	&.super-title {
 		font-size: em(36);
+		font-weight: bold;
 	}
 }

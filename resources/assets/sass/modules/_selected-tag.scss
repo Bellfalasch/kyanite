@@ -1,0 +1,26 @@
+.selected-tag {
+	line-height:48px;
+	margin-bottom:1em;
+	text-transform:uppercase;
+
+	.first-span {
+		font-weight: bold;
+		padding-right: 3em;
+		display: inline-block;
+	}	
+
+	a {
+		background-color:$text-color;
+		border-radius:50%;
+		width: 38px;
+		height: 38px;
+		line-height: 38px;
+		text-align: center;
+		display: inline-block;
+		color:$white;
+		margin-left:1em;
+		i {
+
+		}
+	}
+}
