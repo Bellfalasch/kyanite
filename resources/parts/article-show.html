@@ -7,18 +7,18 @@
     	
     	<div class="article-container" data-th-utext="${portal.processHtml({ '_value=' + content.data.html })}">
             <figure data-test="${article.images}">
-                <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
+                <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
                 <figcaption>Labore et dolore magna aliqua.</figcaption>
             </figure>  
             <div class="article-meta-data">
                 <div class="author">
                     <span class="author-image"></span>
-                    <span class="author-name">Name</span>
+                    <span class="author-name">Hege Lunde</span>
                 </div>
-                <ul class="meta-tags tag-on-article">
-                    <li>labore</li>
-                    <li>fugiat</li>
-                </ul>    
+                <ul class="meta-tags on-article">
+                    <li><a class="tag color-1" href="">incididunt</a></li>  
+                    <li><a class="tag color-2" href="">labore</a></li>  
+                </ul>
             </div>
             <div class="article-text">
                 <h2 class="heading">Heading 2 (18)</h2>
@@ -51,35 +51,45 @@
     </article>
     
     <aside class="related-articles">
-	<h2 class="heading">Relaterte artikler</h2>
+	<h2 class="section-heading">Relaterte artikler</h2>
 	<div class="wrapper">
 		<div class="grid-item">
 			<article class="article-teaser" data-th-each="article : ${articles}">
-	<a href="article.html">
+	
 	    <figure data-test="${article.images}">
-	        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
-	        <div class="meta-tags tag-on-image"><a href="">Tag title</a></div>
+	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
+	        
+        	<ul class="meta-tags on-image">
+        		<li><a class="tag color-1" href="">incididunt</a></li>	
+        		<li><a class="tag color-2" href="">labore</a></li>	
+        	</ul>
+        	
 	    </figure> 
 	    <div class="text-container">
-	        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
+	        <h2 class="heading" data-th-text="${article.title}"><a href="article.html">Nyheter overskrift</a></h2>
 	        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 	    </div>
-    </a>
+    
 </article>      
 
 		</div>
 		<div class="grid-item">
 			<article class="article-teaser" data-th-each="article : ${articles}">
-	<a href="article.html">
+	
 	    <figure data-test="${article.images}">
-	        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
-	        <div class="meta-tags tag-on-image"><a href="">Tag title</a></div>
+	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
+	        
+        	<ul class="meta-tags on-image">
+        		<li><a class="tag color-1" href="">incididunt</a></li>	
+        		<li><a class="tag color-2" href="">labore</a></li>	
+        	</ul>
+        	
 	    </figure> 
 	    <div class="text-container">
-	        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
+	        <h2 class="heading" data-th-text="${article.title}"><a href="article.html">Nyheter overskrift</a></h2>
 	        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 	    </div>
-    </a>
+    
 </article>      
 
 		</div>

@@ -1,0 +1,122 @@
+.tag {
+	font-size: em(15);
+	padding: 0.2em 1em;
+	display: inline-block;
+	position:relative;
+	z-index:1;
+
+	.main-menu & {
+		&:hover {
+			color:$white;
+		}
+		&:after {
+			top:-2px;
+		}
+	}
+
+	.meta-tags & {
+		color:$white;
+	}
+
+	&:after {
+	    content: "";
+	    background-size: cover;
+	    background-repeat:no-repeat !important;
+	    position:absolute;
+	    top:0px;
+	    bottom:0px;
+	    left:0px;
+	    right: 0px;
+	    display: none;
+	    z-index:-1;		
+	}
+
+	&.color-1 {
+		&:hover {
+			&:after {
+				display: block;
+				background-image: url(../img/svg-tags/color-1.svg);
+			}	
+		}
+
+		.meta-tags & {
+			background-image: url(../img/svg-tags/color-1.svg);
+		}
+
+	}
+
+	&.color-2 {
+		&:hover {
+			&:after {
+				display: block;
+				background-image: url(../img/svg-tags/color-2.svg);
+			}	
+		}
+		.meta-tags & {
+			background-image: url(../img/svg-tags/color-2.svg);
+		}
+	}
+
+	&.color-3 {
+		&:hover {
+			&:after {
+				display: block;
+				background-image: url(../img/svg-tags/color-3.svg);
+			}	
+		}
+	}
+
+	&.color-4 {
+		&:hover {
+			&:after {
+				display: block;
+				background-image: url(../img/svg-tags/color-4.svg);
+			}	
+		}
+	}
+
+	&.color-5 {
+		&:hover {
+			&:after {
+				display: block;
+				background-image: url(../img/svg-tags/color-5.svg);
+			}	
+		}
+	}
+
+	&.color-6 {
+		&:hover {
+			&:after {
+				display: block;
+				background-image: url(../img/svg-tags/color-6.svg);
+			}	
+		}
+	}
+
+	&.color-7 {
+		&:hover {
+			&:after {
+				display: block;
+				background-image: url(../img/svg-tags/color-7.svg);
+			}	
+		}
+	}
+	
+	&.color-8 {
+		&:hover {
+			&:after {
+				display: block;
+				background-image: url(../img/svg-tags/color-8.svg);
+			}	
+		}
+	}
+
+	&.color-9 {
+		&:hover {
+			&:after {
+				display: block;
+				background-image: url(../img/svg-tags/color-9.svg);
+			}	
+		}
+	}
+}

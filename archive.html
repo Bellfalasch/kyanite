@@ -24,22 +24,34 @@
     
     <div class="inner-container no-leader no-trailer">
         <div class="logo-container">
-            <a href="#" class="logo">Fabelaktig formidling</a>    
+            <a href="/" class="logo">
+                <span class="visuallyhidden">Fabelaktig formidling</span>
+                <img src="resources/assets/img/logox2.png">
+            </a>    
         </div>
         
         <nav class="site-navigation" aria-label="hovednavigasjon">    
 
-            <ul class="tag-menu">
-                <li><a href="archive.html">ipsum</a></li>
-                <li><a href="">amet</a></li>
-                <li><a href="">consectetur</a></li>
-                <li><a href="">aliqua</a></li>
-                <li><a href="">ullamco</a></li>
-                <li><a href="">dolor</a></li>
-                <li><a href="">irure</a></li>
-                <li><a href="">occaecat</a></li>
+            <ul class="main-menu">
+                <li><a class="tag color-1" href="archive.html">ipsum</a></li>
+                <li><a class="tag color-2" href="">amet</a></li>
+                <li><a class="tag color-3" href="">consectetur</a></li>
+                <li><a class="tag color-4" href="">aliqua</a></li>
+                <li><a class="tag color-5" href="">ullamco</a></li>
+                <li><a class="tag color-6" href="">dolor</a></li>
+                <li><a class="tag color-7" href="">irure</a></li>
+                <li><a class="tag color-8" href="">occaecat</a></li>
+                <li><a class="tag color-9" href="">fabelaktig</a></li>
                 <li class="more"><a href="">Mer</a></li>
             </ul>
+
+            <div class="site-search">
+                <a class="search-trigger">
+                    <span class="visuallyhidden">Søk</span>
+                    <i class="icon-search"></i>
+                </a>
+            </div>
+
         </nav>
 
         
@@ -54,16 +66,21 @@
 
 	<div class="inner-container">
 		<article class="article-teaser" data-th-each="article : ${articles}">
-	<a href="article.html">
+	
 	    <figure data-test="${article.images}">
-	        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
-	        <div class="meta-tags tag-on-image"><a href="">Tag title</a></div>
+	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
+	        
+        	<ul class="meta-tags on-image">
+        		<li><a class="tag color-1" href="">incididunt</a></li>	
+        		<li><a class="tag color-2" href="">labore</a></li>	
+        	</ul>
+        	
 	    </figure> 
 	    <div class="text-container">
-	        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
+	        <h2 class="heading" data-th-text="${article.title}"><a href="article.html">Nyheter overskrift</a></h2>
 	        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 	    </div>
-    </a>
+    
 </article>      
 	
 	</div>
@@ -85,16 +102,21 @@
 
 	<div class="inner-container">
 		<article class="article-teaser" data-th-each="article : ${articles}">
-	<a href="article.html">
+	
 	    <figure data-test="${article.images}">
-	        <img data-th-src="${article.topImage}" src="resources/assets/img/news.jpg" />
-	        <div class="meta-tags tag-on-image"><a href="">Tag title</a></div>
+	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
+	        
+        	<ul class="meta-tags on-image">
+        		<li><a class="tag color-1" href="">incididunt</a></li>	
+        		<li><a class="tag color-2" href="">labore</a></li>	
+        	</ul>
+        	
 	    </figure> 
 	    <div class="text-container">
-	        <h2 class="heading" data-th-text="${article.title}">Nyheter overskrift</h2>
+	        <h2 class="heading" data-th-text="${article.title}"><a href="article.html">Nyheter overskrift</a></h2>
 	        <p data-th-text="${article.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 	    </div>
-    </a>
+    
 </article>      
 	
 	</div>

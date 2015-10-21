@@ -2,13 +2,21 @@
 
 	.search-trigger {
 		position: absolute;
-		right: 1em;
-		bottom:em(-48);
-		width: em(48);
-		height: em(48);
-		line-height: em(48);
-		background:$text-color;
+		right: 15px;
+		top:em(-19);
+		width: em(38);
+		height: em(38);
+		line-height: em(36);
+		background:$white;
 		color:$white;
+		text-align: center;
+		border:1px solid $text-color;
+		border-radius:50%;
+		i {
+			color:$text-color;
+			line-height: 36px;
+			font-size:1.7em;
+		}
 	}
 
 }

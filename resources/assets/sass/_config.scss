@@ -10,7 +10,7 @@ $mobile: new-breakpoint(max-width 767px);
 /* Projectcolors */
 
 $white:			#fff;
-$dark: 			#4a4a4a;
+$dark: 			#000;
 $red:  			#b20031;
 $blue:			#778393;
 $flatgreen: 	#7dc7a7;
@@ -28,7 +28,7 @@ $graySwatchThree: 	#ccc;
 $primary:					$red;
 $secondary:					$blue;
 $text-color:				$dark;
-$link-color:				$primary;
+$link-color:				$text-color;
 $footer-background: 		$dark;
 $footer-color:				$white;
 $background-light:  		$graySwatchOne;

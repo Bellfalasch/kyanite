@@ -4,9 +4,18 @@
 
 
 	.heading {
-		margin-bottom:24px;
-		margin-bottom:rem(24);
+		display: inline-block;
+		margin-bottom:15px;
+		margin-bottom:rem(15px);
 		font-weight: 300;
+	}
+
+	.module-heading {
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	p {
+		margin:0;
 	}
 
 	@extend .grid-two;

@@ -2,23 +2,19 @@
 
 	.logo-container {
 		text-align: center;
-		height: 170px;
-		width: 170px;
-		background:$text-color;
+		height: 180px;
+		width: 183px;
 		margin:0 auto;
 		margin-bottom:3em;
 	}
 
 	.logo {
-		color:$text-color;
+		display: block;
+
 		img {
 			max-width: 100%;
 			height: auto;
 			vertical-align: middle;
-		}
-		@include media($mobile) {
-			// float:none;
-			width: 80px;
 		}
 	}
 

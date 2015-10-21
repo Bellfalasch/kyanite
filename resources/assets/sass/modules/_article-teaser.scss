@@ -3,17 +3,19 @@
 	@include span-columns(12);
 	margin-bottom:3em;
 
+
 	figure {
+		@include clearfix;
 		margin:0 0 2em 0;
 		display: block;
-		max-height: 420px;
-		overflow: hidden;
 		position:relative;
-	
+		float:left;
+
 		img {
 			max-width: 100%;
 			width: 100%;
 			height: auto;
+			float:left;
 		}
 	}
 
