@@ -1,6 +1,6 @@
 .site-navigation {
 	@include clearfix;
-	padding:2.5em 0;
+	padding:em(30) 0 em(30) 0;
 	border-top:1px solid $border-color;
 	position: relative;
 

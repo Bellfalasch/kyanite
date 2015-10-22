@@ -1,31 +1,4 @@
 .related-articles {
 	border-top:1px solid $border-color;
 	padding-top:1.5em;
-
-
-	.heading {
-		display: inline-block;
-		margin-bottom:15px;
-		margin-bottom:rem(15px);
-		font-weight: 300;
-	}
-
-	.module-heading {
-		font-family: 'Open Sans', sans-serif;
-	}
-
-	p {
-		margin:0;
-	}
-
-	@extend .grid-two;
-
-
-	.article-teaser {
-		figure {
-			max-height: 250px;
-			margin-bottom: 1em;
-		}
-	}
-
 }

@@ -20,7 +20,7 @@ $black: 		#000000;
 
 
 $graySwatchOne: 	#f7f7f7;
-$graySwatchTwo: 	#eaeaea;
+$graySwatchTwo: 	#e7e7e7;
 $graySwatchThree: 	#ccc;
 
 /* Functional colors */
@@ -34,7 +34,7 @@ $footer-color:				$white;
 $background-light:  		$graySwatchOne;
 $background-darker-light: 	$graySwatchTwo;
 $background-dark:  			$dark;
-$border-color:				$graySwatchThree;
+$border-color:				$graySwatchTwo;
 
 $tertiary-one:				$flatblue;
 $tertiary-two:				$flatgreen;
@@ -45,3 +45,6 @@ $facebook: #3b5998;
 $twitter: #558cee;
 $print: #219e8f;
 $mail: $primary;
+
+
+$fabelaktigblue: #1b546b;

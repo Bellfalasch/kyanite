@@ -1,5 +1,9 @@
 .news-letter {
 
+	@include media($mobile) {
+		margin-bottom:em(54);
+	}
+
 	.form-container {
 		position:relative;
 		margin:0.5em 0;

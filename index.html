@@ -32,6 +32,16 @@
         
         <nav class="site-navigation" aria-label="hovednavigasjon">    
 
+            <div class="site-search" role="search">
+                <a id="search-trigger" role="button" aria-label="Søk Fabelaktig formidling" aria-haspopup="true"class="search-trigger" href="#">
+                    <span class="visuallyhidden">Søk</span>
+                    <i class="icon-search" aria-hidden="true"></i>
+                </a>
+                <div id="search-container" class="search-container">
+                    <input id="search-input" type="text" placeholder="Søk Fabelaktig formidling..."/>  
+                </div>
+            </div>
+
             <ul class="main-menu">
                 <li><a class="tag color-1" href="archive.html">ipsum</a></li>
                 <li><a class="tag color-2" href="">amet</a></li>
@@ -44,13 +54,6 @@
                 <li><a class="tag color-9" href="">fabelaktig</a></li>
                 <li class="more"><a href="">Mer</a></li>
             </ul>
-
-            <div class="site-search">
-                <a class="search-trigger">
-                    <span class="visuallyhidden">Søk</span>
-                    <i class="icon-search"></i>
-                </a>
-            </div>
 
         </nav>
 
@@ -83,12 +86,12 @@
 <div class="outer-container resources">
 	<div class="inner-container">
 		<div class="grid-item">
-			<h2>Relevant ressurs</h2>
+			<h2 class="heading">Relevant ressurs</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 		</div>
 		<div class="grid-item">
-			<h2>Relevant ressurs</h2>
+			<h2 class="heading">Relevant ressurs</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
 		</div>
@@ -164,8 +167,8 @@
     	<div class="grid-item">
     		<h1 class="heading">Om fabelaktig formidling</h1>
     		<p>Dette er Kopinors side med historier, erfaringer, ideer og verktøy knyttet til formidling.</p>
-    		<a href="">Les mer</a>
-    		<a href="">Informasjonskapsler</a>
+    		<a class="read-more" href="">Les mer</a>
+    		<a class="cookies-desktop" href="">Informasjonskapsler</a>
     	</div>
     	<div class="grid-item">
 	    	<div class="news-letter">
@@ -187,6 +190,7 @@
     		<a href="">Fabelaktig Formidling på Facebook</a>
     		<a href="">Fabelaktig Formidling på Twitter</a>
     		<a href="">Kopinor</a>
+            <a class="cookies-mobile" href="">Informasjonskapsler</a>
     	</div>
     </div>
 </footer>

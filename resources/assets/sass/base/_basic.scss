@@ -44,6 +44,10 @@ article {
     height: 100%;
     padding:0 1em;
 
+    @include media($tablet-portrait) {
+    	padding:0 em(21);
+    }
+
     &.leader {
     	padding-top:3em;
     }

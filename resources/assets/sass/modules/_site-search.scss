@@ -4,18 +4,42 @@
 		position: absolute;
 		right: 15px;
 		top:em(-19);
-		width: em(38);
-		height: em(38);
-		line-height: em(36);
+		width: em(36);
+		height: em(36);
+		line-height: em(34);
 		background:$white;
 		color:$white;
 		text-align: center;
 		border:1px solid $text-color;
 		border-radius:50%;
+		cursor: pointer;
+
 		i {
 			color:$text-color;
-			line-height: 36px;
-			font-size:1.7em;
+			line-height: 34px;
+			font-size:26px;
+		}
+
+		&:hover {
+			background-color:$background-light;
+		}
+	}
+
+	.search-container {
+		display: none;
+		&.open {
+			display: block;
+		}
+
+		input[type="text"] {
+			width: 100%;
+			padding:1em 0;
+			margin-bottom: em(30);
+			border-bottom:1px solid $border-color;
+			text-align: center;
+			&:focus {
+				outline:none;
+			}
 		}
 	}
 

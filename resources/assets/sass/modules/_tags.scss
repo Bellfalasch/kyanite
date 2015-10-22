@@ -16,6 +16,12 @@
 
 	.meta-tags & {
 		color:$white;
+
+		&:hover {
+			&:after {
+				background-image:none !important;
+			}
+		}
 	}
 
 	&:after {

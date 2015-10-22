@@ -51,10 +51,9 @@
     </article>
     
     <aside class="related-articles">
-	<h2 class="section-heading">Relaterte artikler</h2>
-	<div class="wrapper">
-		<div class="grid-item">
-			<article class="article-teaser" data-th-each="article : ${articles}">
+	<div class="two-columns">
+		<h2 class="section-heading">Relaterte artikler</h2>
+		<article class="article-teaser" data-th-each="article : ${articles}">
 	
 	    <figure data-test="${article.images}">
 	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
@@ -72,9 +71,7 @@
     
 </article>      
 
-		</div>
-		<div class="grid-item">
-			<article class="article-teaser" data-th-each="article : ${articles}">
+		<article class="article-teaser" data-th-each="article : ${articles}">
 	
 	    <figure data-test="${article.images}">
 	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
@@ -92,7 +89,6 @@
     
 </article>      
 
-		</div>
 	</div>
 </aside>
     

@@ -1,8 +1,19 @@
 .resources {
 	background-color:$background-light;
-	margin-bottom:3em;
+	padding:em(36) 0 em(8);
+	margin-bottom:em(70);
 
 	@extend .grid-two;
+
+	.heading {
+		font-size: em(20);
+		@extend .heading-sans-serif;
+		margin:0;
+	}
+
+	p {
+		margin-top:em(3);
+	}
 
 	.archive & {
 		@extend .grid-one;

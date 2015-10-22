@@ -7,6 +7,7 @@
 		width: 80%;
 		margin:0 auto;
 		margin-bottom:3em;
+		padding-top:em(20);
 		p {
 			font-size:em(18);
 			font-weight: 300;
@@ -37,6 +38,7 @@
 		.article-meta-data {
 			@include span-columns(3);
 			padding-right:3em;
+			padding-top:em(28);
 
 			.author {
 				.author-image {

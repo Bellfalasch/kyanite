@@ -1,12 +1,16 @@
 .article-teaser {
 	@include clearfix;
 	@include span-columns(12);
-	margin-bottom:3em;
+	margin-bottom:em(70);
+	margin-top:em(14);
 
+	@include media($mobile) {
+		margin-bottom:em(60);
+	}
 
 	figure {
 		@include clearfix;
-		margin:0 0 2em 0;
+		margin:0 0 em(30) 0;
 		display: block;
 		position:relative;
 		float:left;
@@ -20,8 +24,13 @@
 	}
 
 	.heading {
-		font-size:em(28);
+		font-size:em(32);
 		margin-bottom: 0;
+		display: inline-block;
+	}
+
+	p {
+		margin:0.6em 0;
 	}
 
 	.text-container {
@@ -33,6 +42,25 @@
 
 	.two-columns & {
 		@include span-columns(6);
+		margin-top:0;
+		margin-bottom: 0;
+
+		@include media($mobile) {
+			@include span-columns(12);
+			margin-bottom:em(60);
+		}
+
+		.heading {
+			font-size:em(24);
+			a {
+				line-height: inherit;
+			}
+		}
+
+		p {
+			margin-top:em(3);
+		}
+
 		.text-container {
 			width: 100%;
 		}
