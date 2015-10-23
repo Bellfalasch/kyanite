@@ -20,6 +20,9 @@
 			margin:0 0 2em 0;
 			display: block;
 			position:relative;
+			@include media($tablet-portrait) {
+				margin-bottom:1em;
+			}
 		
 			img {
 				max-width: 100%;
@@ -39,7 +42,10 @@
 			@include span-columns(3);
 			padding-right:3em;
 			padding-top:em(28);
-
+			@include media($tablet-portrait) {
+				text-align:center;
+				padding:1em 0 0 0;
+			}
 			.author {
 				.author-image {
 					width: 120px;
@@ -47,12 +53,19 @@
 					border-radius:50%;
 					display: inline-block;
 					background:$background-light;
+					@include media($tablet-portrait) {
+						display: none;
+					}
 				}
 				.author-name {
 					width: 120px;
 					text-align: center;
 					display: inline-block;
 					font-weight: bold;
+					@include media($tablet-portrait) {
+						font-weight: 300;
+						color:$fabelaktigblue;
+					}
 				}
 			}
 

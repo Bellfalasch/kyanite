@@ -35,10 +35,17 @@
             <div class="site-search" role="search">
                 <a id="search-trigger" role="button" aria-label="Søk Fabelaktig formidling" aria-haspopup="true"class="search-trigger" href="#">
                     <span class="visuallyhidden">Søk</span>
-                    <i class="icon-search" aria-hidden="true"></i>
                 </a>
                 <div id="search-container" class="search-container">
-                    <input id="search-input" type="text" placeholder="Søk Fabelaktig formidling..."/>  
+                    <div class="search-icon-container">
+                        <i class="icon-search"></i>
+                    </div>
+                    <div class="input-container">
+                        <input id="search-input" type="text" placeholder="Søk Fabelaktig formidling..."/>      
+                    </div>
+                    <div class="submit-container visuallyhidden">
+                        <button>Søk</button>
+                    </div>
                 </div>
             </div>
 
@@ -52,7 +59,6 @@
                 <li><a class="tag color-7" href="">irure</a></li>
                 <li><a class="tag color-8" href="">occaecat</a></li>
                 <li><a class="tag color-9" href="">fabelaktig</a></li>
-                <li class="more"><a href="">Mer</a></li>
             </ul>
 
         </nav>
@@ -69,8 +75,8 @@
 	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
 	        
         	<ul class="meta-tags on-image">
-        		<li><a class="tag color-1" href="">incididunt</a></li>	
-        		<li><a class="tag color-2" href="">labore</a></li>	
+        		<li><a tabindex="-1" class="tag color-1" href="">incididunt</a></li>	
+        		<li><a tabindex="-1" class="tag color-2" href="">labore</a></li>	
         	</ul>
         	
 	    </figure> 
@@ -86,12 +92,12 @@
 <div class="outer-container resources">
 	<div class="inner-container">
 		<div class="grid-item">
-			<h2 class="heading">Relevant ressurs</h2>
+			<h2 class="heading"><a href="#">Relevant ressurs</a></h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 		</div>
 		<div class="grid-item">
-			<h2 class="heading">Relevant ressurs</h2>
+			<h2 class="heading"><a href="#">Relevant ressurs</a></h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
 		</div>
@@ -105,8 +111,8 @@
 	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
 	        
         	<ul class="meta-tags on-image">
-        		<li><a class="tag color-1" href="">incididunt</a></li>	
-        		<li><a class="tag color-2" href="">labore</a></li>	
+        		<li><a tabindex="-1" class="tag color-1" href="">incididunt</a></li>	
+        		<li><a tabindex="-1" class="tag color-2" href="">labore</a></li>	
         	</ul>
         	
 	    </figure> 
@@ -127,8 +133,8 @@
 	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
 	        
         	<ul class="meta-tags on-image">
-        		<li><a class="tag color-1" href="">incididunt</a></li>	
-        		<li><a class="tag color-2" href="">labore</a></li>	
+        		<li><a tabindex="-1" class="tag color-1" href="">incididunt</a></li>	
+        		<li><a tabindex="-1" class="tag color-2" href="">labore</a></li>	
         	</ul>
         	
 	    </figure> 
@@ -145,8 +151,8 @@
 	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
 	        
         	<ul class="meta-tags on-image">
-        		<li><a class="tag color-1" href="">incididunt</a></li>	
-        		<li><a class="tag color-2" href="">labore</a></li>	
+        		<li><a tabindex="-1" class="tag color-1" href="">incididunt</a></li>	
+        		<li><a tabindex="-1" class="tag color-2" href="">labore</a></li>	
         	</ul>
         	
 	    </figure> 

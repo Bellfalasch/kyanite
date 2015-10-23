@@ -12,31 +12,93 @@
 		text-align: center;
 		border:1px solid $text-color;
 		border-radius:50%;
-		cursor: pointer;
+		display: block;
 
-		i {
+		&:after {
+			font-family: 'icomoon';
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+
+			/* Better Font Rendering =========== */
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			content:"\e600";
+			
+			position:absolute;
+			left:0;
+			right: 0;
+			top:0;
+			bottom:0;
+			text-align: center;
 			color:$text-color;
+			font-size:24px;
 			line-height: 34px;
-			font-size:26px;
+
 		}
 
 		&:hover {
 			background-color:$background-light;
 		}
+
+		&.active {
+			&:after {
+				content:"\e60f";
+			}
+		}
 	}
 
 	.search-container {
 		display: none;
+		width: 100%;
+		border-bottom:1px solid $border-color;
+		margin-bottom: em(30);
+		padding-bottom:em(30);
 		&.open {
-			display: block;
+			display: inline-block;
+		}
+
+		
+		.search-icon-container {
+			@include span-columns(3);
+			text-align: right;
+			line-height: 1;
+			i {
+				font-size: 36px;
+				color:#9b9b9b;
+			}
+
+			@include media($tablet-portrait) {
+				text-align: center;
+			}
+
+			@include media($mobile) {
+				@include span-columns(2);
+				text-align: left;
+			}
+
+		}
+		.input-container {
+			@include span-columns(6);
+			@include media($mobile) {
+				@include span-columns(9);
+			}
+		}
+
+		.submit-container {
+			@include span-columns(3);
+			@include media($mobile) {
+				@include span-columns(1);
+			}
 		}
 
 		input[type="text"] {
 			width: 100%;
-			padding:1em 0;
-			margin-bottom: em(30);
-			border-bottom:1px solid $border-color;
+			padding:0;
 			text-align: center;
+			line-height: 36px;
 			&:focus {
 				outline:none;
 			}

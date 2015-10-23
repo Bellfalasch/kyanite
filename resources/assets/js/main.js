@@ -1,8 +1,10 @@
 $(document).ready(function(){
 	
 	$('#search-trigger').click(function(e){
+		var trigger = $(this);
 		e.preventDefault();
 		$('#search-container').toggleClass('open');
+		trigger.toggleClass('active');
 		$('#search-input').focus();
 	});
 

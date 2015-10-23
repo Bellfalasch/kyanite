@@ -2,10 +2,13 @@
 
 	.logo-container {
 		text-align: center;
-		height: 180px;
 		width: 183px;
 		margin:0 auto;
 		margin-bottom:em(56);
+		@include media($mobile) {
+			width: 140px;
+			margin-bottom: em(46);
+		}
 	}
 
 	.logo {

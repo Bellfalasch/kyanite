@@ -15,6 +15,9 @@
 
 	&.on-article {
 		padding-top:2em;
+		@include media($tablet-portrait) {
+			padding-top:1.5em;
+		}
 		li {
 			margin-bottom:0.5em;
 		}
