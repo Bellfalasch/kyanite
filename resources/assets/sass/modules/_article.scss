@@ -2,6 +2,13 @@
 	@include clearfix();
 	margin-bottom:6em;
 	
+
+	ul {
+		margin:1em 2em;
+		list-style:initial;
+	}
+
+
 	.preface {
 		text-align: center;
 		width: 80%;

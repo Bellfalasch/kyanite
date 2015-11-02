@@ -3,14 +3,13 @@
 	display:inline-block;
 
 	li {
-		display: inline-block;
 		float:left;
 	}
 
 	&.on-image {
 		position:absolute;
-		bottom:-1px;
-		left:0;
+		bottom:0px;
+		left:0px;
 	}
 
 	&.on-article {

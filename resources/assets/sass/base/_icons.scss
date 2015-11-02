@@ -27,61 +27,60 @@
   font-size:2.5em;
 }
 
-.icon-size-small {
-  // font-size:1.5em;
+.icon-arrowup:before {
+  content: "\e912";
 }
-
-.icon-arrow:before {
-  content: "\e60a";
-}
-.icon-close:before {
-  content: "\e60f";
-}
-.icon-file_pdf:before {
-  content: "\e610";
-}
-.icon-sendemail2:before {
-  content: "\e611";
-}
-.icon-avtale:before {
-  content: "\e601";
+.icon-arrowdown:before {
+  content: "\e900";
 }
 .icon-file_doc:before {
-  content: "\e602";
+  content: "\e901";
 }
-.icon-hamburger:before {
-  content: "\e603";
-}
-.icon-language_EN:before {
-  content: "\e604";
-}
-.icon-language_NO:before {
-  content: "\e605";
+.icon-file_pdf:before {
+  content: "\e902";
 }
 .icon-logo_k:before {
-  content: "\e606";
+  content: "\e903";
 }
 .icon-logo_kopinor:before {
-  content: "\e607";
+  content: "\e904";
+}
+.icon-arrow:before {
+  content: "\e905";
+}
+.icon-avtale:before {
+  content: "\e906";
+}
+.icon-close:before {
+  content: "\e907";
+}
+.icon-hamburger:before {
+  content: "\e908";
+}
+.icon-language_EN:before {
+  content: "\e909";
+}
+.icon-language_NO:before {
+  content: "\e90a";
 }
 .icon-newsletter:before {
-  content: "\e608";
+  content: "\e90b";
 }
 .icon-print:before {
-  content: "\e609";
-}
-.icon-sendemail:before {
-  content: "\e60b";
-}
-.icon-social_facebook:before {
-  content: "\e60c";
-}
-.icon-social_twitter:before {
-  content: "\e60d";
-}
-.icon-telephone:before {
-  content: "\e60e";
+  content: "\e90c";
 }
 .icon-search:before {
-  content: "\e600";
+  content: "\e90d";
+}
+.icon-sendemail:before {
+  content: "\e90e";
+}
+.icon-social_facebook:before {
+  content: "\e90f";
+}
+.icon-social_twitter:before {
+  content: "\e910";
+}
+.icon-telephone:before {
+  content: "\e911";
 }

@@ -1,7 +1,9 @@
 .tag {
-	font-size: em(15);
-	padding: 0.2em 1em;
-	display: inline-block;
+	font-size: em(13);
+	padding:0 1em;
+	padding-top:2px;
+	line-height:25px;
+	display: block;
 	position:relative;
 	z-index:1;
 
@@ -127,6 +129,19 @@
 				display: block;
 				background-image: url(../img/svg-tags/color-9.svg);
 			}	
+		}
+	}
+	&.disabled {
+		text-transform: uppercase;
+		&:hover {
+			&:after {
+				display: block;
+				background-image: url(../img/dagenstricks.png);
+			}	
+		}
+		.meta-tags & {
+			color:$text-color;
+			background-image: url(../img/dagenstricks.png);
 		}
 	}
 }

@@ -1,6 +1,8 @@
 .site-footer {
 	@extend .outer-container;
-	background-color:$footer-background;
+	// background-color:$footer-background;
+	background:url(http://labs.makingwaves.com/personal/havard/fabelaktig/resources/assets/img/blackboard-pattern.jpg);
+	background-repeat:repeat;
 	margin-top:em(140);
 	color:$white;
 
@@ -12,6 +14,7 @@
 	// @extend .grid-two;
 
 	.grid-item {
+	
 		a,
 		span {
 			display: block;
@@ -75,13 +78,6 @@
 		}
 	}
 
-	.cookies-mobile {
-		display: none;
-		margin-top:em(54);
-		@include media($mobile) {
-			display: block;
-		}
-	}
 
 	.heading {
 		@extend .h4;
@@ -94,4 +90,14 @@
 			margin-right:3em;
 		}
 	}
+
+
+			.cookies-mobile {
+				display: none !important;
+				margin-top:em(54);
+				@include media($mobile) {
+					display: block !important;
+				}
+			}
 }
+

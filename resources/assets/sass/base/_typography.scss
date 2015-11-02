@@ -45,6 +45,12 @@ small, .font_small {
 		font-size: em(36);
 		font-weight: bold;
 	}
+
+	a {
+		&:hover {
+			color:$fabelaktigblue;
+		}
+	}
 }
 
 .heading-sans-serif {

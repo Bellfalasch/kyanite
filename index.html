@@ -6,11 +6,11 @@
         <title>Fabelaktig Formidling</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/resources/assets/css/main.css">
+        <link rel="stylesheet" href="http://labs.makingwaves.com/personal/havard/fabelaktig/resources/assets/css/main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="resources/assets/js/fallback-jquery/fallback-jquery.min.js">\x3C/script>')</script>
-        <script src="/resources/assets/js/vendor.min.js"></script>
-        <script src="/resources/assets/js/main.min.js"></script>
+        <script src="http://labs.makingwaves.com/personal/havard/fabelaktig/resources/assets/js/vendor.min.js"></script>
+        <script src="http://labs.makingwaves.com/personal/havard/fabelaktig/resources/assets/js/main.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
     </head>
@@ -24,14 +24,14 @@
     
     <div class="inner-container no-leader no-trailer">
         <div class="logo-container">
-            <a href="/" class="logo">
-                <span class="visuallyhidden">Fabelaktig formidling</span>
+            <a href="http://labs.makingwaves.com/personal/havard/fabelaktig/" class="logo">
+                <h1 class="visuallyhidden">Fabelaktig formidling</h1>
                 <img src="resources/assets/img/logox2.png">
-            </a>    
+            </a>
         </div>
         
         <nav class="site-navigation" aria-label="hovednavigasjon">    
-
+            <h1 class="visuallyhidden">Hovedmeny</h1>  
             <div class="site-search" role="search">
                 <a id="search-trigger" role="button" aria-label="Søk Fabelaktig formidling" aria-haspopup="true"class="search-trigger" href="#">
                     <span class="visuallyhidden">Søk</span>
@@ -70,7 +70,7 @@
         <main role="main" class="content">
             <div class="inner-container">
 	<article class="article-teaser" data-th-each="article : ${articles}">
-	
+		
 	    <figure data-test="${article.images}">
 	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
 	        
@@ -106,7 +106,7 @@
 
 <div class="inner-container">
 	<article class="article-teaser" data-th-each="article : ${articles}">
-	
+		
 	    <figure data-test="${article.images}">
 	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
 	        
@@ -125,10 +125,23 @@
 	
 </div>
 
+<div class="outer-container trick-of-the-day">
+	<div class="inner-container">
+		<h2 class="heading">Bingo</h2>
+		<p>En lærer skulle snakke med klassen sin om spillavhengighet. Før hun begynte på en kort innledning om temaet, delte hun ut et ark til hver elev. På hvert ark var det fire rekker á fire ord. Lærereren forklarte.</p>
+		<p>-Når dere hører meg si et av ordene på arket deres, tegner dere en ring rundt dette. Hvis dere får en hel rekke med ring rundt -vannrett, loddrett eller på skrå - roper dere bingo! Tiltaket slo an, og da alle var ferdige ropte alle: - En gang til!</p>
+		<p>Læring og lek går fint sammen.</p>
+		<div class="meta-tags on-article">
+			<span class="tag disabled">dagens triks</span>	
+		</div>
+
+	</div>	
+</div>
+
 <div class="inner-container">
 	<div class="two-columns">
 		<article class="article-teaser" data-th-each="article : ${articles}">
-	
+		
 	    <figure data-test="${article.images}">
 	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
 	        
@@ -146,7 +159,7 @@
 </article>      
 	
 		<article class="article-teaser" data-th-each="article : ${articles}">
-	
+		
 	    <figure data-test="${article.images}">
 	        <img data-th-src="${article.topImage}" src="resources/assets/img/placeholder-image.png" />
 	        

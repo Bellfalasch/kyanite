@@ -6,22 +6,11 @@
 		font-weight: bold;
 		padding-right: 3em;
 		display: inline-block;
+		@include media($mobile) {
+			padding-right:1.5em;
+		}
 	}	
-
-	a {
-		// background-color:$text-color;
-		// border-radius:50%;
-		// width: 38px;
-		// height: 38px;
-		// line-height: 38px;
-		// text-align: center;
-		// display: inline-block;
-		// color:$white;
-		// margin-left:1em;
-		// i {
-
-		// }
-	}
+	
 	i {
 		vertical-align: -1px;
 	}

@@ -1,6 +1,7 @@
 .social-sharing {
 	@include clearfix();
-	margin-top:3em;
+	margin:3em 0 0 0 !important;
+	list-style:none !important;
 	li {
 		display:inline-block;	
 		float:left;

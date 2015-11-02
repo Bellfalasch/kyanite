@@ -25,7 +25,7 @@
 			/* Better Font Rendering =========== */
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
-			content:"\e600";
+			content: "\e90d";
 			
 			position:absolute;
 			left:0;
@@ -45,7 +45,7 @@
 
 		&.active {
 			&:after {
-				content:"\e60f";
+				content: "\e907";
 			}
 		}
 	}

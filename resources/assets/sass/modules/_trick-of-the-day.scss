@@ -1,0 +1,20 @@
+.trick-of-the-day {
+	background:url(http://labs.makingwaves.com/personal/havard/fabelaktig/resources/assets/img/blackboard-pattern.jpg);
+	background-repeat:repeat;
+	text-align:center;
+	color:$white;
+	margin-bottom:em(70);
+
+	.inner-container {
+		max-width: 700px;
+	}
+
+	.heading {
+		color:$white;
+		font-size:em(24);
+	}
+
+	p {
+		font-family: 'Cardo', serif;
+	}
+}
