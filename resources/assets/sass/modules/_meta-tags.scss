@@ -1,6 +1,7 @@
 .meta-tags {
-
 	display:inline-block;
+	list-style:none !important;
+
 
 	li {
 		float:left;
@@ -14,11 +15,14 @@
 
 	&.on-article {
 		padding-top:2em;
+		margin:0;
 		@include media($tablet-portrait) {
 			padding-top:1.5em;
 		}
+
 		li {
 			margin-bottom:0.5em;
+			float:none;
 		}
 	}
 }
