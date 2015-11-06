@@ -1,6 +1,6 @@
 .site-navigation {
 	@include clearfix;
-	padding:em(30) 0 em(30) 0;
+	padding:0 0 em(30) 0;
 	border-top:1px solid $border-color;
 	position: relative;
 
@@ -8,9 +8,9 @@
 		@include clearfix();
 		text-align: center;
 		text-transform: uppercase;
-		padding:0 6em;
+		padding:em(30) 6em 0 6em;
 		@include media($mobile) {
-			padding:0;
+			padding:em(30) 0 0 0;
 		}
 
 		li {

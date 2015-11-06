@@ -13,6 +13,7 @@
 		border:1px solid $text-color;
 		border-radius:50%;
 		display: block;
+		z-index: 999;
 
 		&:after {
 			font-family: 'icomoon';
@@ -54,20 +55,25 @@
 		display: none;
 		width: 100%;
 		border-bottom:1px solid $border-color;
-		margin-bottom: em(30);
-		padding-bottom:em(30);
+		position:relative;
+		// margin-bottom: em(30);
+		// padding-bottom:em(30);
 		&.open {
 			display: inline-block;
 		}
 
 		
 		.search-icon-container {
-			@include span-columns(3);
+			position:absolute;
+			left:0;
+			top:0;
+			width: 23.23176%;
 			text-align: right;
-			line-height: 1;
 			i {
 				font-size: 36px;
 				color:#9b9b9b;
+				line-height: 100px;
+				height: 100px;
 			}
 
 			@include media($tablet-portrait) {
@@ -81,28 +87,30 @@
 
 		}
 		.input-container {
-			@include span-columns(6);
+			@include span-columns(12);
+			@include omega;
 			@include media($mobile) {
-				@include span-columns(9);
+				padding-left:30px;
 			}
 		}
 
 		.submit-container {
-			@include span-columns(3);
-			@include media($mobile) {
-				@include span-columns(1);
-			}
+			position:absolute;
+			right:0;
 		}
 
 		input[type="text"] {
 			width: 100%;
 			padding:0;
 			text-align: center;
-			line-height: 36px;
+			line-height: 100px;
+			height: 100px;
 			&:focus {
 				outline:none;
 			}
 		}
+		input::-ms-clear {
+		    display: none;
+		}
 	}
-
 }

@@ -97,19 +97,31 @@ input {
 ::-webkit-input-placeholder {
    color: $dark;
    font-size: em(20);
+   @include media($mobile) {
+      font-size: em(15);
+   }
 }
 
 :-moz-placeholder { /* Firefox 18- */
    color: $dark;  
    font-size: em(20);
+   @include media($mobile) {
+      font-size: em(15);
+   }
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
    color: $dark;  
    font-size: em(20);
+   @include media($mobile) {
+      font-size: em(15);
+   }
 }
 
 :-ms-input-placeholder {  
    color: $dark;  
    font-size: em(20);
+   @include media($mobile) {
+      font-size: em(15);
+   }
 }
