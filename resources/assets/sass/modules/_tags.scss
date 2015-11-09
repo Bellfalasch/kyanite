@@ -49,11 +49,13 @@
 			&:after {
 				display: block;
 				background-image: url(../img/svg-tags/color-1.svg);
+				background-size: cover;
 			}	
 		}
 
 		.meta-tags & {
 			background-image: url(../img/svg-tags/color-1.svg);
+			background-size: cover;
 		}
 
 	}
@@ -63,10 +65,12 @@
 			&:after {
 				display: block;
 				background-image: url(../img/svg-tags/color-2.svg);
+				background-size: cover;
 			}	
 		}
 		.meta-tags & {
 			background-image: url(../img/svg-tags/color-2.svg);
+			background-size: cover;
 		}
 	}
 
@@ -75,6 +79,7 @@
 			&:after {
 				display: block;
 				background-image: url(../img/svg-tags/color-3.svg);
+				background-size: cover;
 			}	
 		}
 	}
@@ -84,6 +89,7 @@
 			&:after {
 				display: block;
 				background-image: url(../img/svg-tags/color-4.svg);
+				background-size: cover;
 			}	
 		}
 	}
@@ -93,6 +99,7 @@
 			&:after {
 				display: block;
 				background-image: url(../img/svg-tags/color-5.svg);
+				background-size: cover;
 			}	
 		}
 	}
@@ -102,6 +109,7 @@
 			&:after {
 				display: block;
 				background-image: url(../img/svg-tags/color-6.svg);
+				background-size: cover;
 			}	
 		}
 	}
@@ -111,6 +119,7 @@
 			&:after {
 				display: block;
 				background-image: url(../img/svg-tags/color-7.svg);
+				background-size: cover;
 			}	
 		}
 	}
@@ -120,6 +129,7 @@
 			&:after {
 				display: block;
 				background-image: url(../img/svg-tags/color-8.svg);
+				background-size: cover;
 			}	
 		}
 	}
@@ -129,6 +139,7 @@
 			&:after {
 				display: block;
 				background-image: url(../img/svg-tags/color-9.svg);
+				background-size: cover;
 			}	
 		}
 	}
@@ -138,11 +149,13 @@
 			&:after {
 				display: block;
 				background-image: url(../img/dagenstricks.png);
+				background-size: cover;
 			}	
 		}
 		.meta-tags & {
 			color:$text-color;
 			background-image: url(../img/dagenstricks.png);
+			background-size: cover;
 		}
 	}
 }
