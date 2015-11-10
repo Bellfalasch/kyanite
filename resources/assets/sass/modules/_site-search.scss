@@ -101,10 +101,9 @@
 
 		input[type="text"] {
 			width: 100%;
-			padding:0;
 			text-align: center;
-			line-height: 100px;
-			height: 100px;
+			line-height: 40px;
+			padding:2em 0;
 			&:focus {
 				outline:none;
 			}
